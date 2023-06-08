@@ -7,7 +7,7 @@
 
     
 import re
-
+print("enter input:")
 str_input=re.sub("[\[\]\"\\s]","",input())
 list_input=str_input.split(",")
 list_input=[*set(list_input)]
@@ -22,5 +22,5 @@ for name in list_input:
 
     else:
         list_anagrams[sorted_name]=[name]
-
+print("output:")
 print(list(list_anagrams.values()))
